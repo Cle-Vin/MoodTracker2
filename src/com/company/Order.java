@@ -16,7 +16,7 @@ public class Order {
         int humeur = lc.nextInt();
         String[] humeurPossible = {"Très Heureux/se", "Heureux/se", "OK", "Triste", "Très Triste"};
         System.out.println("Vous avez choisi comme humeur : " + humeurPossible[humeur]);
-        resume += humeurPossible[humeur] + " ";
+        resume += ": " + humeurPossible[humeur] + " ";
     }
 
     public void whichDay() {
@@ -30,12 +30,10 @@ public class Order {
         System.out.println("7 - Dimanche");
         int jour = lc.nextInt();
         String[] jourPossible = {"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"};
-        System.out.println("Nous sommes le : " + jourPossible[(jour - 1)]);
+        System.out.println("Nous sommes le " + jourPossible[(jour - 1)]);
         resume += jourPossible[(jour - 1)] + " ";
-
     }
-    public void runDaySMood() {
-        whichDay();
+    public void addMood(){
         moodChoice();
         System.out.println("");
         System.out.println(String.format(resume));

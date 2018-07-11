@@ -6,7 +6,13 @@ public class Main {
 
     public static void main(String[] args) {
         Order order = new Order();
-        order.runDaySMood();
+        order.whichDay();
+        int i = 0
+        /** la methode "newScan" n'existe pas sur java
+         */
+        if newScan(){
+            order.addMood();
+        }
     }
 }
 /** ceci est un test
